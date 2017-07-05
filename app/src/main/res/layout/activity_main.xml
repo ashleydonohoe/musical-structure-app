@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.adonohoe.justplaymusic.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Login Screen"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_margin="8dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <!--https://developer.spotify.com/technologies/spotify-android-sdk/android-sdk-authentication-guide/-->
+    <!--https://github.com/spotify/android-sdk-->
+    <TextView
+        android:text="This screen is for the user to log in to their Spotify account. The Spotify Android SDK's authentication flow library will be used to authenticate the user and obtain their account information using the Spotify API. By clicking the button below, the SDK will attempt to log in using the Spotify app already installed on the user's device or will open a WebView to login via web browser."
+        style="@style/TextStyle" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In to Spotify"
+        android:layout_margin="16dp"/>
+</LinearLayout>
