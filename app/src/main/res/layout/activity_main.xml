@@ -12,10 +12,11 @@
     <!--https://developer.spotify.com/technologies/spotify-android-sdk/android-sdk-authentication-guide/-->
     <!--https://github.com/spotify/android-sdk-->
     <TextView
-        android:text="This screen is for the user to log in to their Spotify account. The Spotify Android SDK's authentication flow library will be used to authenticate the user and obtain their account information using the Spotify API. By clicking the button below, the SDK will attempt to log in using the Spotify app already installed on the user's device or will open a WebView to login via web browser."
+        android:text="This screen is for the user to log in to their Spotify account. The Spotify Android SDK's authentication flow library will be used to authenticate the user and obtain their account information using the Spotify API. By clicking the button below, the SDK will attempt to log in using the Spotify app already installed on the user's device or will open a WebView to login via web browser. After successful authentication, the Saved Songs Activity launches."
         style="@style/TextStyle" />
 
     <Button
+        android:id="@+id/spotify_login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In to Spotify"

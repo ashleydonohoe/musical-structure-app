@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityStyle"
+    tools:context="com.adonohoe.justplaymusic.NowPlayingActivity">
+
+    <TextView
+        android:text="Now Playing"
+        style="@style/HeadingStyle" />
+
+    <TextView
+        android:text="This screen will display a list of the Spotify user's saved songs obtaining the data from the Spotify API and displaying the song names and artists in a ListView. Tapping the song opens a Now Playing screen."
+        style="@style/TextStyle" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/album"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:text="Song Name - Artist"
+        android:padding="4dp"
+        android:textAlignment="center"
+        style="@style/TextStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play/Stop"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lyrics"
+            android:layout_margin="16dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
