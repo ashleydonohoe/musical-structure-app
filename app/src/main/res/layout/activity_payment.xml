@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.adonohoe.justplaymusic.PaymentActivity"
+    style="@style/ActivityStyle">
+
+    <TextView
+        android:text="Payment Screen"
+        style="@style/HeadingStyle" />
+
+    <!--http://docs.7digital.com/#purchasing-->
+    <TextView
+        style="@style/TextStyle"
+        android:text="This activity will find the song played for sale using the 7Digital API with Android's AsyncTask to find the song and display its price. The API accepts credit card payments only, so this screen will have a form for user info/payment info. The request will be made to purchase the song using the 7Digital API's credit card payment system when the user taps Submit Order" />
+
+    <TextView
+        style="@style/TextStyle"
+        android:text="User info/credit card info form goes here"
+        android:background="@android:color/white"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/submit_order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Submit Order" />
+</LinearLayout>

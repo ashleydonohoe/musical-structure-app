@@ -13,7 +13,7 @@ public class SavedSongsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_songs);
 
-        // After the user completes the authentication flow through the Spotifty app or WebView presented by the Android Spotify APK, then the user is taken to a list of their saved songs via the SavedSongsActivity
+        // The user can view their saved songs from Spotify. Tapping the song in the list launches the Now Playing Activity for playback
         TextView selectedSong = (TextView) findViewById(R.id.select_song_text_view);
         selectedSong.setOnClickListener(new View.OnClickListener() {
             @Override

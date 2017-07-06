@@ -11,7 +11,7 @@
         style="@style/HeadingStyle" />
 
     <TextView
-        android:text="This screen will display a list of the Spotify user's saved songs obtaining the data from the Spotify API and displaying the song names and artists in a ListView. Tapping the song opens a Now Playing screen."
+        android:text="This screen will display a list of the Spotify user's saved songs obtaining the data from the Spotify API and displaying an array of the song names and artists in a ListView. Tapping the song opens a Now Playing screen."
         style="@style/TextStyle" />
 
     <TextView

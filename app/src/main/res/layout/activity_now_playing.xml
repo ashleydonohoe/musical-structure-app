@@ -11,8 +11,9 @@
         style="@style/HeadingStyle" />
 
     <TextView
-        android:text="This screen will display a list of the Spotify user's saved songs obtaining the data from the Spotify API and displaying the song names and artists in a ListView. Tapping the song opens a Now Playing screen."
-        style="@style/TextStyle" />
+        android:id="@+id/textView"
+        style="@style/TextStyle"
+        android:text="This screen uses the Spotify Player Library from the Spotify Android SDK to play the requested song for the signed in user. The Android Broadcast Receiver class will be involved with the streamed music broadcast along with the ConnectivityManager to monitor network connectivity. Picasso will be used to display the album cover image. Playback is controlled with the play/stop button. The Buy button goes to the payment activity." />
 
     <ImageView
         android:layout_width="100dp"
@@ -31,22 +32,14 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/play_or_stop_button"
             android:text="Play/Stop"
-            android:layout_margin="16dp"/>
+            style="@style/ButtonStyle" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lyrics"
-            android:layout_margin="16dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/buy_song_button"
             android:text="Buy"
-            android:layout_margin="16dp"/>
-
+            style="@style/ButtonStyle" />
     </LinearLayout>
 
 </LinearLayout>
