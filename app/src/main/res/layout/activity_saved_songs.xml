@@ -8,6 +8,7 @@
 
     <TextView
         android:text="Saved Songs"
+        android:textAlignment="center"
         style="@style/HeadingStyle" />
 
     <TextView

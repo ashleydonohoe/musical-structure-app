@@ -7,6 +7,7 @@
 
     <TextView
         android:text="Login Screen"
+        android:textAlignment="center"
         style="@style/HeadingStyle" />
 
     <!--https://developer.spotify.com/technologies/spotify-android-sdk/android-sdk-authentication-guide/-->

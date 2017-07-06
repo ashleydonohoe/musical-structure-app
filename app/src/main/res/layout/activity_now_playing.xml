@@ -8,6 +8,7 @@
 
     <TextView
         android:text="Now Playing"
+        android:textAlignment="center"
         style="@style/HeadingStyle" />
 
     <TextView
